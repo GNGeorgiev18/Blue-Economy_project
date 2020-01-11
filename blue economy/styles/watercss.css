@@ -9,6 +9,7 @@ body {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
+    background-color:rgb(199,232,235);
 }
 
 
@@ -25,10 +26,14 @@ header {
 .content
 {
     margin-top: 100px;
-    background-color:cyan;
 }
 .h1 {
     text-align:center;
+}
+.img {
+    width: 100%;
+    max-width: 800px;
+    height:auto;
 }
 .nav-toggle {
     position: absolute !important;
