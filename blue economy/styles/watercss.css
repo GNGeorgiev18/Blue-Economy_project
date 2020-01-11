@@ -25,6 +25,10 @@ header {
 .content
 {
     margin-top: 100px;
+    background-color:cyan;
+}
+.h1 {
+    text-align:center;
 }
 .nav-toggle {
     position: absolute !important;
@@ -198,6 +202,7 @@ footer li {
 hr {
     border: 1px solid white;
 }
+
 
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
