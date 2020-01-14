@@ -19,6 +19,7 @@
     overflow: hidden;
     background: skyblue;
     margin-top: 20px;
+    
 }
 
 .container ul{
@@ -32,10 +33,14 @@
     list-style: none;
     width:20%;
     height:auto;
-    background: lightgray;
+    width: 600px;
+    padding: 30px;
+    background:#fff;
+    box-sizing:border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0,0,0,.2);
+    border:2px solid black;
     margin :20px 0px 20px 55px; 
-    border:2px solid blue;
-    box-sizing: border-box;
 }
 .container ul li:hover{
     opacity: 0.8;
