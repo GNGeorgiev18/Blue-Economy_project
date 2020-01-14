@@ -56,8 +56,8 @@ header {
     float:left;
     list-style: none;
     width:20%;
-    height:300px;
-    background: white;
+    height:auto;
+    background: lightgray;
     margin :20px 0px 20px 55px; 
     border:2px solid blue;
     box-sizing: border-box;
