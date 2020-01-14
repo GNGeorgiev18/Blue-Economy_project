@@ -66,16 +66,8 @@ header {
     opacity: 0.8;
 }
 
-.container ul li .bottom{
-    width: 100%;
-    height:50px;
-    line-height: 50px;
-    background: blue;    
-    text-align: center;
-    color:white;
-    font-size: 20px;
-   
-}
+
+
 
 @media screen and (max-width:1250px){
     .container ul li{
