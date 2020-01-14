@@ -10,6 +10,9 @@
     max-width: 800px;
     height:auto;
 }
+.content{
+    margin-top: 100px;
+}
 .container{
     width: 90%;
     margin: auto;
