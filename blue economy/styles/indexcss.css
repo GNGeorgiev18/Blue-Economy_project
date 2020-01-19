@@ -21,13 +21,11 @@
     transform: translate(-50%, -10%);
     position: absolute;
 }
-
-
-
 .what-is {
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 0px;
     background-color: hsl(204, 100%, 72%);
 }
 
@@ -165,7 +163,7 @@ img {
     .banner > .banner-img {
         width: 100%;
         display: block;
-        height: 400px;
+        height: 450px;
     }
     .banner>h1 {
         font-size: 60px;
@@ -174,15 +172,6 @@ img {
         left: 50%;
         transform: translate(-50%, -10%);
         position: absolute;
-    }
-    .banner > p {
-        font-size: 27px;
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        font-weight: 500;
-        text-shadow: -3px 2px 2px rgba(0, 0, 2, 0.5);
     }
     .what-is {
         padding: 50px;
@@ -262,7 +251,7 @@ img {
         opacity: 0;
         transition: 0.3s ease-in;
         border-radius: 50%;
-        margin-left: 34.9%;
+        margin-left: 35%;
         margin-top: 20px;
         font-weight: 600;
         font-size: 20px;
@@ -286,7 +275,7 @@ img {
         opacity: 0;
         transition: 0.3s ease-in;
         border-radius: 50%;
-        margin-left: 35.5%;
+        margin-left: 35.7%;
         margin-top: 20px;
         font-weight: 600;
         font-size: 20px;
