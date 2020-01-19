@@ -2,9 +2,7 @@
 .h1 {
     text-align:center;
 }
-.h2 {
-    text-align:center;
-}
+
 .img_left {
     width: 50%;
     max-width: 300px;
@@ -14,6 +12,7 @@
     margin-bottom:5px;
     border:solid black 1px;
     padding:2px;
+    margin-right: 40px;
 }
 .img_right {
     width: 50%;
@@ -24,20 +23,23 @@
     margin-bottom:5px;
     border:solid black 1px;
     padding:2px;
+
 }
+
 .content{
     margin-top: 100px;
 }
+
 .p_left {
     font-size:25px;
     margin-left:80px;
+    margin-top: 90px;
 }
-.center{
-    text-align: center;
-}
+
 .p_right{
     font-size:25px;
     margin-right:80px;
+    margin-top: 90px;
 }
 
 
