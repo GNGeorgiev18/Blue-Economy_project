@@ -3,15 +3,6 @@ from nltk.chat.util import Chat, reflections
 import requests
 import time
 from datetime import datetime
-#The URL Ticker to get the .json files of the crypto currencies
-TICKER_URL = 'https://api.coinmarketcap.com/v1/ticker/'
-#Function to get the latest crypto currency price of a specific 'crypto' e.g bitcoin, litecoin, etc.
-# crypto = {bitcoin, litecoin, etherium, ...}
-def get_latest_crypto_price( crypto ):
-    response = requests.get(TICKER_URL+crypto+'/')
-    response_json = response.json()
-    # Convert the price to a floating point number
-    return float(response_json[0]['price_usd'])
 #Pairs is a list of patterns and responses.
 pairs = [
     [
@@ -19,11 +10,11 @@ pairs = [
         ["Hello %1, How are you today ?",]
     ],
     [
-        r"(hi|How are you,|Is anyone there?|Hello|Good day|Whats up)(.*)",
+        r"(hi|How are you|Is anyone there?|Hello|Good day|Whats up|Hi|hello)(.*)",
         ["Hello!", "Good to see you again!","Hi there, how can I help?"]
     ],
     [
-        r"(cya|See you later|Goodbye|Hello|I am Leaving|Have a Good day)(.*)",
+        r"(cya|See you later|Goodbye|I am Leaving|Have a good day|Have a nice day|Bye|bye)(.*)",
         ["Sad to see you go :(",
                  "Talk to you later",
                  "Goodbye!"]
@@ -74,23 +65,22 @@ pairs = [
                  "Some of the sectors affected by the Blue economy are Maritime and coastal tourism and Mineral resources"]
     ],
     [
-        r"(Which companies support the Blue economy?|Which companies is Blue economy supported by?)(.*)",
+        r"(Which companies support the Blue economy?|Which companies is Blue economy supported by?|What companies support Blue economy?)(.*)",
         ["Some of the companies that support the Blue economy are Scotrenewables Tidal Resources Ltd., Atlantis Resources Ltd. and Wavestar Energy ",
                  "Some companies supporting Blue economy are Carnegie Wave, Siemens Wind Power and Marine Harvest",
                  "The World Bank is deeply committed to supporting the blue economy, with a blue portfolio of USD 2.6 billion in investments.",
                  "Some of the companies supporting the Blue economy are PharmaMar, Stellar Biotechnologies and Porifarma"]
     ],
     [
-        r"(What does Blue economy help with?|What good does Blue economy do?|What does Blue economy provide?)(.*)",
+        r"(What does Blue economy help with?|what does Blue economy help with?|what does blue economy help with|What good does Blue economy do?|What does Blue economy provide?)(.*)",
         ["The blue economy provides food, jobs, water, and is a source of economic growth.",
                  "It provides the livelihood for hundreds of millions of the poorest and most vulnerable people in the world.",
                  "By one estimate, it generates USD 3-6 trillion to the world economy."]
     ],
 ]
-
 #A Function to run the chatbot
 def chatty():
-  print("Hi, I'm Chatty and I want to help and chat with you ! \nPlease type lowercase English language to start a conversation. Type quit to leave ") #default message at the start
+  print("Hi, I'm Ivy and I want to help and chat with you! \nPlease type 'Hello' to start a conversation. Type quit to leave.") #default message at the start
   chat = Chat(pairs,reflections )
   chat.converse()
 #Run the chatbot
