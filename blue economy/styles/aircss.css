@@ -34,60 +34,99 @@
 }
 
 /*cotent*/
-.h1 {
-    text-align:center;
-    text-shadow: 8px  8px  lightblue;
+.first > h3{
+    text-align: center;
+    margin-top: 0px;
+    color: #0F3947;
+    font-size: 25px;
 }
 
-.img_left {
+.middle, .middle1, .last > h3{
+    text-align: center;
+    color: #0F3947;
+    font-size: 25px;
+}
+
+.img-left {
     width: 50%;
-    max-width: 300px;
+    max-width: 200px;
     height:auto;
     float:left;
     margin-left:10px;
-    margin-bottom:5px;
-    border:solid black 1px;
+    margin-bottom:30px;
     padding:2px;
     margin-right: 40px;
-    
+    margin-top: 30px;
+    transition: transform .2s;
 }
-.img_right {
+.img-right {
     width: 50%;
-    max-width: 300px;
+    max-width: 250px;
     height:auto;
     float:right;
     margin-right:10px;
-    margin-bottom:5px;
-    border:solid black 1px;
     padding:2px;
-    
-    
-
-}
-.img_left:hover{
-    opacity: 0.4;
-    box-shadow: 0 0 20px 20px  #8791b0;
-    
-}
-.img_right:hover{
-    opacity: 0.4;
-    box-shadow: 0 0 20px 20px  #8791b0;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transition: transform .2s;
 }
 
-.content{
-    margin-top: 100px;
+.img-right1 {
+    width: 50%;
+    max-width: 280px;
+    height:230px;
+    float:right;
+    margin-right:10px;
+    padding:2px;
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    transition: transform .2s;
+}
+.img-left:hover, .img-right:hover, .img-right1:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
-.p_left {
-    font-size:25px;
-    margin-left:80px;
-    margin-top: 90px;
+.p-left {
+    font-size:20px;
+    text-align: justify;
+    margin-left: 20px;
+    text-indent: 30px;
+    color: #0F3947;
 }
 
-.p_right{
-    font-size:25px;
-    margin-right:80px;
-    margin-top: 90px;
+.p-right{
+    font-size:20px;
+    text-align: justify;
+    margin-right: 20px;
+    text-indent: 30px;
+    color: #0F3947;
+    margin-top: 50px;
+}
+
+.first{
+    background-color: #70C6FF;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.middle{
+    margin-top: 10px;
+}
+
+.middle1{
+    margin-top: 70px;
+    background-color:#70C6FF;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+
+.last{
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width: 800px) {
@@ -119,8 +158,94 @@
         font-weight: 600;
         text-shadow: -3px 2px 2px rgba(0, 0, 2, 0.5);
     }
+    .first > h3{
+        text-align: center;
+        margin-top: 0px;
+        color: #0F3947;
+        font-size: 35px;
+    }
 
-    
+    .middle, .middle1, .last > h3{
+        text-align: center;
+        color: #0F3947;
+        font-size: 35px;
+    }
+
+    .img-left {
+        width: 50%;
+        max-width: 270px;
+        height:270px;
+        float:left;
+        margin-left:30px;
+        margin-bottom:30px;
+        padding:2px;
+        margin-right: 40px;
+        transition: transform .2s;
+    }
+    .img-right {
+        width: 50%;
+        max-width: 300px;
+        height:auto;
+        float:right;
+        margin-right:10px;
+        padding:2px;
+        margin-top: 25px;
+        transition: transform .2s;
+    }
+
+    .img-right1 {
+        width: 50%;
+        max-width: 300px;
+        height:230px;
+        float:right;
+        margin-right:10px;
+        padding:2px;
+        margin-top: 20px;
+        transition: transform .2s;
+    }
+
+    .img-left:hover, .img-right:hover, .img-right1:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); 
+    }
+
+    .p-left {
+        font-size:25px;
+        margin-top: 90px;
+        text-align: justify;
+        margin-left: 20px;
+        text-indent: 30px;
+        color: #0F3947;
+    }
+    .p-right{
+        font-size:25px;
+        margin-top: 120px;
+        text-align: justify;
+        text-indent: 30px;
+        color: #0F3947;
+    }
+    .first{
+        background-color:#70C6FF;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+
+    .middle{
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .middle1{
+        margin-top: 110px;
+        background-color:#70C6FF;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+
+    .last{
+        margin-bottom: 30px;
+    }
 }
 
 
