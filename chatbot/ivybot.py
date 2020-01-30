@@ -67,10 +67,13 @@ pairs = [
                  "It provides the livelihood for hundreds of millions of the poorest and most vulnerable people in the world.",
                  "By one estimate, it generates USD 3-6 trillion to the world economy."]
     ],
-    [
-        r"(Why is Blue economy important?|Why is the Blue economy important?)(.*)",
-        ["The ocean is fundamental to life on Earth covering nearly three quarters of our planet. It produces more than half the oxygen that we breathe yet our oceans are moving deeper into ecological crisis just at the moment when we need them more than ever so we should try to help them."]
+        [
+        r"(Why is Blue economy important?|Why is the Blue economy important?|Why does Blue economy matter?)(.*)",
+        [ "Oceans protect biodiversity, provide jobs, food, drive economic growth, keep the planet cool, and absorbs about 3/10 of global CO2 emissions and we should keep them in good conditions.",
+                 "The ocean is fundamental to life on Earth covering nearly three quarters of our planet. It produces more than half the oxygen that we breathe yet our oceans are moving deeper into ecological crisis just at the moment when we need them more than ever so we should try to help them.",
+                 "Two of the biggest ecological challenges for the ocean are overfishing and its pollution with plastics. This is a very bad thing because the oceans give us more than 1/2 of the oxygen and assure 2/5 of the world's population with marine-origin food, needed every day for them to survive. One of the things the Blue economy helps with is getting the oceans in a better condition."]
     ],
+       
 ]
 
 #A Function to run the chatbot
