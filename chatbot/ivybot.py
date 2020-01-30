@@ -24,7 +24,7 @@ pairs = [
                  "The Center for the Blue Economy says than now it is a widely used term around the world with three related but distinct meanings- the overall contribution of the oceans to economies, the need to address the environmental and ecological sustainability of the oceans, and the ocean economy as a growth opportunity for both developed and developing countries."]
     ],
     [
-        r"(What is Blue economy related to?|What terms is it related to?|What terms is Blue economy related to?|What terms is it related to?)(.*)",
+        r"(What is Blue economy related to?|What terms is it related to?|What terms is Blue economy related to?)(.*)",
         ["Blue economy is related to the terms Ocean economy, Green economy and Blue growth.",
                  "Terms related to Blue economy are Ocean economy, Green economy and Blue growth.",
                  "Important relations to Blue economy are the terms Ocean economy, Green economy and Blue growth."]
@@ -78,7 +78,7 @@ pairs = [
 
 #A Function to run the chatbot
 def ivy():
-  print("Hi, I'm Ivy and I want to help and chat with you! \nPlease type 'Hello' start a conversation. Type quit to leave ") #default message at the start
+  print("Hi, I'm Ivy and I want to help and chat with you! \nPlease type 'Hello' to start a conversation. Type quit to leave ") #default message at the start
   chat = Chat(pairs,reflections)
   chat.converse()
 #Run the chatbot
