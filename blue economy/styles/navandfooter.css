@@ -13,7 +13,7 @@ body {
     background-color:#CAE9FF;
 }
 
-/* navigation styles start here */
+/*Navigation styles start here */
 
 header {
     background: #78C9FF;
@@ -122,7 +122,6 @@ nav ul ul {
 
 
 /* Display Dropdowns on Hover */
-
 nav ul li:hover > ul {
     display: inherit;
     background-color: #78C9FF;

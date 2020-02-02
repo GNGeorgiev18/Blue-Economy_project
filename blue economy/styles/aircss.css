@@ -1,5 +1,5 @@
-/*for smaller displays*/
-/*banner*/
+/*For smaller screens*/
+/*Banner*/
 .banner {
     width: 100%;
     display: block;
@@ -34,7 +34,8 @@
     text-shadow: -3px 2px 2px rgba(0, 0, 2, 0.5);
 }
 
-/*cotent*/
+/*Content*/
+
 .first > h3{
     text-align: center;
     margin-top: 0px;
@@ -126,9 +127,11 @@
 .last{
     margin-bottom: 30px;
 }
-/*responsive design for bigger displays*/
+
+/*For larger screens*/
+
 @media screen and (min-width: 800px) {
-    /*banner*/
+    /*Banner*/
     .banner {
         width: 100%;
         display: block;
@@ -157,7 +160,7 @@
         font-weight: 600;
         text-shadow: -3px 2px 2px rgba(0, 0, 2, 0.5);
     }
-    /*content*/
+    /*Content*/
     .first > h3{
         text-align: center;
         margin-top: 0px;

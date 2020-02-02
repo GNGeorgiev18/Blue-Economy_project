@@ -213,6 +213,7 @@ img {
     position: relative;
     padding: 0;
 }
+
 /*For larger screens*/
 @media screen and (min-width: 800px) {
     /*Banner*/
@@ -330,6 +331,7 @@ img {
         font-weight: 600;
         font-size: 20px;
     }
+
     /*Hover on circle 2*/
     .text-2:hover {
         opacity: 1;
@@ -355,6 +357,7 @@ img {
         font-weight: 600;
         font-size: 20px;
     }
+
     /*Hover on circle 3*/
     .text-3:hover {
         opacity: 1;
@@ -397,6 +400,7 @@ img {
         display: inline-block;
         transition: transform .2s;
     }
+    
     /*Hover on last 2 images*/
     .why-pics > img:hover{
         -ms-transform: scale(1.1);
