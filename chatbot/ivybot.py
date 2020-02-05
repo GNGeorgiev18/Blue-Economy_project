@@ -1,3 +1,4 @@
+#-----------------------------------------------Importing libraries---------------------------------------------------
 import nltk
 nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
@@ -9,10 +10,10 @@ import tensorflow
 import random
 import json
 import pickle
-
-with open("intents.json", encoding="utf8") as file:
+#-----------------------------------------------Openning intents file--------------------------------------------------
+with open("intents.json") as file:
     data = json.load(file)
-    
+#-----------------------------------------------Open the saved model---------------------------------------------------
 try:
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
@@ -21,6 +22,7 @@ except:
     labels = []
     docs_x = []
     docs_y = []
+#-----------------------------------------------Splitting the string into substring------------------------------------
     for intent in data["intents"]:
         for pattern in intent["patterns"]:
             wrds = nltk.word_tokenize(pattern)
@@ -30,7 +32,7 @@ except:
         
         if intent["tag"] not in labels:
             labels.append(intent["tag"])
-        
+#-----------------------------------------------Defining roots of the words--------------------------------------------
     words = [stemmer.stem(w.lower()) for w in words if w != "?"]
     words = sorted(list(set(words)))
 
@@ -40,7 +42,7 @@ except:
     output = []
 
     out_empty = [0 for _ in range(len(labels))]
-
+#-----------------------------------------------Counting letters-------------------------------------------------------
     for x, doc in enumerate(docs_x):
         bag = []
     
@@ -61,11 +63,11 @@ except:
 
     training = numpy.array(training)
     output = numpy.array(output)
-
+#-----------------------------------------------Saving the model-------------------------------------------------------
     with open("data.pickle", "wb") as f:
         pickle.dump((words, labels, training, output), f)
 
-
+#-----------------------------------------------Training the model---------------------------------------------------
 tensorflow.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(training[0])])
@@ -85,7 +87,7 @@ else:
 	model.save("model.tflearn")
 
 
-
+#-----------------------------------------------Counting latters in a substring----------------------------------------
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
     
@@ -99,9 +101,9 @@ def bag_of_words(s, words):
     
     return numpy.array(bag)
     
-    
+#-----------------------------------------------Starting the model-----------------------------------------------------    
 def chat():
-    print("I'm Ivy and I'm here to help and chat with you!")
+    print("Start talking with the bot (type quit to stop)!")
     while True:
         inp = input("You: ")
         if inp.lower() == "quit":
